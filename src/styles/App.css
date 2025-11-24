@@ -1,0 +1,42 @@
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #222;
+  --card-bg: #fff;
+  --border-color: #ddd;
+  --input-bg: #fff;
+  --accent-color: #0077ff;
+  --accent-hover: #005fcc;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --border-color: #333;
+  --input-bg: #2b2b2b;
+  --accent-color: #3ea6ff;
+  --accent-hover: #2196f3;
+}
+
+body,
+html,
+#root,
+.App {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.message {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.message.error {
+  color: #ff5252;
+}
